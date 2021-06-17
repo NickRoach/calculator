@@ -45,7 +45,7 @@ function updateDisplay() {
 }
 
 
-//NUMBER BUTTONS (don't forget to bring a towel)
+//NUMBER BUTTONS 
 
 //Button "decimal"
 document.getElementById("decimal").addEventListener("click", function() {
