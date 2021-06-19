@@ -21,6 +21,13 @@ function updateDisplay() {
     if(number2.length > 1 && number2[0] === "0" && number2[1] !== "."){ //if the second number is 0 followed by a character that is not a decimal point, slice off that leading 0 i.e. do not allow eg. 003 as number 2 
         number2 = number2.slice(1);
     }
+
+    if(number1.length > 1 && number1[0] === "0" && number1[1] !== "."){ //if the second number is 0 followed by a character that is not a decimal point, slice off that leading 0 i.e. do not allow eg. 003 as number1 
+        number1 = number1.slice(1);
+    }
+
+
+
     if(displayString.length > 13){
         alert("Display overflow. Display will be cleared"); //if the display is full, further operations can no longer be displayed and this is handled by raising this alert and clearing the display
         clear();
