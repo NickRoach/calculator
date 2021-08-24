@@ -22,7 +22,7 @@ function updateDisplay() {
         number2 = number2.slice(1);
     }
 
-    if(number1.length > 1 && number1[0] === "0" && number1[1] !== "."){ //if the second number is 0 followed by a character that is not a decimal point, slice off that leading 0 i.e. do not allow eg. 003 as number1 
+    if(number1.length > 1 && number1[0] === "0" && number1[1] !== "."){ //if the first number is 0 followed by a character that is not a decimal point, slice off that leading 0 i.e. do not allow eg. 003 as number1 
         number1 = number1.slice(1);
     }
 
